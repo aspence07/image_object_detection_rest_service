@@ -1,4 +1,4 @@
-package com.example.imgobjectdetectionrestservice;
+package com.example.imgobjectdetectionrestservice.db;
 
 import java.util.List;
 

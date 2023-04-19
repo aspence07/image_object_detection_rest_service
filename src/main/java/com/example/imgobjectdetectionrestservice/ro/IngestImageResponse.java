@@ -1,4 +1,4 @@
-package com.example.imgobjectdetectionrestservice;
+package com.example.imgobjectdetectionrestservice.ro;
 
 import java.util.List;
 import lombok.Data;

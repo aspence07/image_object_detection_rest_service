@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.imgobjectdetectionrestservice.db.Image;
+import com.example.imgobjectdetectionrestservice.ro.IngestImageRequest;
+import com.example.imgobjectdetectionrestservice.ro.IngestImageResponse;
+import com.example.imgobjectdetectionrestservice.service.ImageService;
+
 @RestController
 @RequestMapping()
 public class ImageController {
@@ -39,11 +44,6 @@ public class ImageController {
 	@PostMapping("/images") 
 	public IngestImageResponse ingestImage(@RequestBody IngestImageRequest ingestImageRequest) throws IOException {
 		return imageService.ingestImage(ingestImageRequest);
-	}
-
-	@GetMapping("/foo")
-	public String foo() {
-		return null;
 	}
 
 }
